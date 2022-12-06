@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build:{
     outDir:'docs',   //輸出到docs
-    assetsDir:'./'
+    // assetsDir:'assets'
   },
   base: './',  //資源路徑改為相對
   server: {

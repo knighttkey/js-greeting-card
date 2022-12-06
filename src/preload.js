@@ -13,4 +13,4 @@ function logWarning(...warnings){
 
 console.warn  = logWarning;
 //---------------------------------------
-// console.log = function() {}   //關閉consolg.log
+console.log = function() {}   //關閉consolg.log

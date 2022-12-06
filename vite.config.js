@@ -7,7 +7,7 @@ export default defineConfig({
   build:{
     outDir:'docs'   //輸出到docs
   },
-  base: './',  //資源路徑改為相對
+  base: '/',  //資源路徑改為相對
   server: {
     host: '0.0.0.0',
     port: 9007,

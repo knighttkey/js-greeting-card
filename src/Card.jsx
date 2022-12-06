@@ -837,7 +837,7 @@ const Card = () => {
                           onMouseMove={(e) => handleTigerTooltipShow(e)}
                         >
                           <div id="tooltipTiger">
-                            按住滑鼠左鍵，往左滑可選聖誕賀卡。
+                            按住滑鼠左鍵，往左滑可選兔年賀卡。
                           </div>
                         </div>
                         <div
@@ -846,7 +846,7 @@ const Card = () => {
                           onMouseMove={(e) => handleTreeTooltipShow(e)}
                         >
                           <div id="tooltipTree">
-                            按住滑鼠左鍵，往右滑可選虎年賀卡。
+                            按住滑鼠左鍵，往右滑可選兔年賀卡。
                           </div>
                         </div>
                       </div>

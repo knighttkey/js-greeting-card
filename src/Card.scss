@@ -114,13 +114,13 @@
         user-select: none;
         background-position-y: -1px;
         &.step1 {
-          background-image: url("./image/step1.png");
+          background-image: url("/image/step1.png");
         }
         &.step2 {
-          background-image: url("./image/step2.png");
+          background-image: url("/image/step2.png");
         }
         &.step3 {
-          background-image: url("./image/step3.png");
+          background-image: url("/image/step3.png");
         }
       }
     }
@@ -510,7 +510,7 @@
         height: 40px;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url("./image/logo.png");
+        background-image: url("/image/logo.png");
         background-position: center center;
         margin: 0 20px 0 0;
       }

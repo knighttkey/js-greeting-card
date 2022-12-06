@@ -5,13 +5,14 @@ import InApp from "detect-inapp";
 import { useSwipeable, Swipeable } from "@bryandollery/react-swipeable";
 import * as R from "ramda";
 import cardTemplateA from "/image/cardTemplateA.png";
-import cardTemplateB from "/image/cardTemplateB.png";
+import cardTemplateB from "/image/cardTemplateA.png";
 import iOsVersion from "ios-version";
 
 import iOS from "is-ios";
 
 
 const Card = () => {
+  console.log('cardTemplateA', cardTemplateA)
   const textAreaRef = useRef();
   const signatureRef = useRef();
   const textAreaPlaceholderRef = useRef();

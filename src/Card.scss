@@ -46,7 +46,7 @@
       height: 100vh; /*給 Safari 以外的瀏覽器讀取*/
       height: calc(var(--vh, 1vh) * 100);
       background-size: 200%;
-      background-image: url("./image/background.png");
+      background-image: url("/image/background.png");
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -58,7 +58,7 @@
       // padding-top: 142.1875%;
       // background-repeat: no-repeat;
       background-size: 200%;
-      background-image: url("./image/background.png");
+      background-image: url("/image/background.png");
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -78,7 +78,7 @@
           // margin-top: 35%;
           background-repeat: no-repeat;
           background-size: 100%;
-          background-image: url("./image/home.png");
+          background-image: url("/image/home.png");
           background-position: center;
           transition: 0.3s;
           -webkit-user-select: none;

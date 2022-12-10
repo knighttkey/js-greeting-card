@@ -343,8 +343,8 @@ const Card = () => {
         }
       } else if (iOS) {
         console.log("iphone或ipad");
-        if (iosVersion.major === 15) {
-          console.log("ios 15");
+        if (iosVersion.major === 15 || iosVersion.major === 16) {
+          console.log("ios 15 or 16");
           try {
             navigator.share(shareDataJustImage);
           } catch (error) {
@@ -353,11 +353,6 @@ const Card = () => {
         } else {
           console.log("非ios 15");
           alert("您的手機系統版本過舊，請長按賀卡圖片來進行分享！");
-          // try {
-          //   navigator.share(shareData);
-          // } catch (error) {
-          //   alert("mobileShareError" + error);
-          // }
         }
       } else {
         try {
@@ -391,7 +386,7 @@ const Card = () => {
         setTimeout(() => {
           setDownLoadSuccessShow(false);
         }, 5000);
-      }, 5000);
+      }, 3000);
     } catch (error) {
       console.log("download_error", error);
       alert("download_error" + error);

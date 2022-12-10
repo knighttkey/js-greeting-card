@@ -542,13 +542,13 @@ const Card = () => {
     console.log("textAreaCurrentSize", textAreaCurrentSize);
 
     textAreaRef.current.style.fontSize = `${
-      textAreaCurrentSize.height * 0.22
+      textAreaCurrentSize.height * 0.28
     }px`;
     textAreaRef.current.style.lineHeight = `${
       textAreaCurrentSize.height * 0.32
     }px`;
     textAreaPlaceholderRef.current.style.fontSize = `${
-      textAreaCurrentSize.height * 0.22
+      textAreaCurrentSize.height * 0.28
     }px`;
     textAreaPlaceholderRef.current.style.lineHeight = `${
       textAreaCurrentSize.height * 0.32
@@ -601,22 +601,16 @@ const Card = () => {
   const modifySignatureFont = () => {
     let signatureCurrentSize = signatureRef.current.getBoundingClientRect();
     console.log("signatureCurrentSize", signatureCurrentSize);
-    // signatureRef.current.style.fontSize = `${
-    //   signatureCurrentSize.height * 0.6
-    // }px`;
-    // signaturePlaceholderRef.current.style.fontSize = `${
-    //   signatureCurrentSize.height * 0.6
-    // }px`;
 
 
     signatureRef.current.style.fontSize = `${
-      signatureCurrentSize.height * 0.25
+      signatureCurrentSize.height * 0.4
     }px`;
     signatureRef.current.style.lineHeight = `${
       signatureCurrentSize.height * 0.35
     }px`;
     signaturePlaceholderRef.current.style.fontSize = `${
-      signatureCurrentSize.height * 0.25
+      signatureCurrentSize.height * 0.4
     }px`;
     signaturePlaceholderRef.current.style.lineHeight = `${
       signatureCurrentSize.height * 0.35
@@ -740,7 +734,7 @@ const Card = () => {
             ref={signatureRef}
             // maxLength={12}
             // size="10"
-            rows={1}
+            rows="1"
             spellCheck="false"
             onChange={(e) => handleChangeSignature(e)}
             onFocus={() => setSignatureAreaPlaceholderShow(false)}

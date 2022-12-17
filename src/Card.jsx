@@ -5,7 +5,7 @@ import InApp from "detect-inapp";
 import { useSwipeable, Swipeable } from "@bryandollery/react-swipeable";
 import * as R from "ramda";
 import cardTemplateA from "/image/cardTemplateA.png";
-import cardTemplateB from "/image/cardTemplateA.png";
+import cardTemplateB from "/image/cardTemplateB.png";
 import iOsVersion from "ios-version";
 
 import iOS from "is-ios";
@@ -826,16 +826,17 @@ const Card = () => {
                           onMouseMove={(e) => handleTigerTooltipShow(e)}
                         >
                           <div id="tooltipTiger">
-                            按住滑鼠左鍵，往左滑可選兔年賀卡。
+                          按住滑鼠左鍵，往右滑可選聖誕賀卡。
+                            
                           </div>
-                        </div>
+                        </div>Ｆ
                         <div
                           className="card_template tree"
                           ref={templateFirstRef}
                           onMouseMove={(e) => handleTreeTooltipShow(e)}
                         >
                           <div id="tooltipTree">
-                            按住滑鼠左鍵，往右滑可選兔年賀卡。
+                          按住滑鼠左鍵，往左滑可選兔年賀卡。
                           </div>
                         </div>
                       </div>

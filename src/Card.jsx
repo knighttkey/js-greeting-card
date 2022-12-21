@@ -537,16 +537,16 @@ const Card = () => {
     console.log("textAreaCurrentSize", textAreaCurrentSize);
 
     textAreaRef.current.style.fontSize = `${
-      textAreaCurrentSize.height * 0.28
+      textAreaCurrentSize.height * 0.3
     }px`;
     textAreaRef.current.style.lineHeight = `${
-      textAreaCurrentSize.height * 0.32
+      textAreaCurrentSize.height * 0.5
     }px`;
     textAreaPlaceholderRef.current.style.fontSize = `${
-      textAreaCurrentSize.height * 0.28
+      textAreaCurrentSize.height * 0.3
     }px`;
     textAreaPlaceholderRef.current.style.lineHeight = `${
-      textAreaCurrentSize.height * 0.32
+      textAreaCurrentSize.height * 0.5
     }px`;
   };
 
@@ -574,7 +574,7 @@ const Card = () => {
       let acc = 0;
       contentWithCount.forEach((item, index)=>{
         console.log('item.count', item.count);
-        if(acc < 48) {
+        if(acc < 18) {
           acc += item.count;
           tempString.push(item.text);
         }
@@ -599,16 +599,16 @@ const Card = () => {
 
 
     signatureRef.current.style.fontSize = `${
-      signatureCurrentSize.height * 0.4
+      signatureCurrentSize.height * 0.45
     }px`;
     signatureRef.current.style.lineHeight = `${
-      signatureCurrentSize.height * 0.35
+      signatureCurrentSize.height * 0.45
     }px`;
     signaturePlaceholderRef.current.style.fontSize = `${
-      signatureCurrentSize.height * 0.4
+      signatureCurrentSize.height * 0.45
     }px`;
     signaturePlaceholderRef.current.style.lineHeight = `${
-      signatureCurrentSize.height * 0.35
+      signatureCurrentSize.height * 0.45
     }px`;
 
 
@@ -693,7 +693,7 @@ const Card = () => {
             }`}
             ref={textAreaPlaceholderRef}
           >
-            這裡至多可以輸入30個字哦！選下一步後，點儲存賀卡即可下載！
+            這裡至多可輸入30個字哦！選下一步後，點儲存賀卡即可下載！
           </div>
           <textarea
             id={`textArea`}
